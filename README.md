@@ -21,7 +21,7 @@ This first project as a 42/1337 student will help you consolidate your Piscine s
 
 # <a name="libc">Libc Functions</a>
 
-- memset  [(see man)](http://linux.die.net/man/3/memset) bzero   [(see man)](http://linux.die.net/man/3/bzero)
+- memset  [(see man)](http://linux.die.net/man/3/memset) - bzero   [(see man)](http://linux.die.net/man/3/bzero)
 - memcpy  [(see man)](http://linux.die.net/man/3/memcpy)
 - memccpy [(see man)](http://linux.die.net/man/3/memccpy)
 - memmove [(see man)](http://linux.die.net/man/3/memmove)
