@@ -62,30 +62,10 @@ This first project as a 42/1337 student will help you consolidate your Piscine s
 
 ----------
 
-| Function       	|  <a name="ft_putstr_fd">ft_putstr_fd</a> 	|
+| Function       	|  ft_strjoin  |
 |----------------	|---------------------------------------	|
-| Prototype      	| void ft_putstr_fd(char const *s, int fd); |
-| Description    	| Ecrit la chaine s sur le descripteur de fichier fd. |
-| Param. #1      	| La chaine de caractères à écrire. |
-| Retour         	| Rien. |
-| Fonctions libc 	| write(2)	|
-
-----------
-
-| Function       	|  <a name="ft_putendl_fd">ft_putendl_fd</a> 	|
-|----------------	|---------------------------------------	|
-| Prototype      	| void ft_putendl_fd(char const *s, int fd); |
-| Description    	| Ecrit la chaine s sur le descripteur de fichier fd suivi d’un ’\n’. |
-| Param. #1      	| La chaine de caractères à écrire. |
-| Retour         	| Rien. |
-| Fonctions libc 	| write(2)	|
-
-----------
-
-| Function       	|  <a name="ft_putnbr_fd">ft_putnbr_fd</a> 	|
-|----------------	|---------------------------------------	|
-| Prototype      	| void ft_putnbr_fd(int n, int fd); |
-| Description    	| Ecrit l’entier n sur le descripteur de fichier fd. |
-| Param. #1      	| L’entier à écrire. |
-| Retour         	| Rien. |
-| Fonctions libc 	| write(2)	|
+| Prototype      	| char *ft_strjoin(char const *s1, char const *s2); |
+| Parameters     	| #1.  The prefix string. <br/> #2.  The suffix string. |
+| Return value   	| The new string.  NULL if the allocation fails. |
+| External functs | malloc |
+| Description    	| Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.	|
