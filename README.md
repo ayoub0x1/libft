@@ -70,7 +70,7 @@ This first project as a 42/1337 student will help you consolidate your Piscine s
 | External functs | malloc |
 | Description    	| Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.	|
 
- ----------
+----------
 
 | Function       	|  ft_strtrim  |
 |----------------	|---------------------------------------	|
@@ -79,3 +79,76 @@ This first project as a 42/1337 student will help you consolidate your Piscine s
 | Return value   	| The trimmed string.  NULL if the allocation fails. |
 | External functs | malloc |
 | Description    	| Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.	| 
+  
+ 
+----------
+
+| Function       	|  ft_split  |
+|----------------	|---------------------------------------	|
+| Prototype      	| char **ft_split(char const *s, char c); |
+| Parameters     	| #1.  The string to be split. <br/> #2.  The delimiter character. |
+| Return value   	| The array of new strings resulting from the split. NULL if the allocation fails. |
+| External functs | malloc, free |
+| Description    	| Allocates (with malloc(3)) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter.  The array must be ended by a NULL pointer.	|
+ 
+----------
+
+ 
+| Function       	|  ft_itoa  |
+|----------------	|---------------------------------------	|
+| Prototype      	| char *ft_itoa(int n); |
+| Parameters     	| #1.  the integer to convert. |
+| Return value   	| The string representing the integer.  NULL if the allocation fails. |
+| External functs | malloc |
+| Description    	| Allocates (with malloc(3)) and returns a string representing the integer received as an argument. Negative numbers must be handled.	|
+
+----------
+
+ 
+| Function       	|  ft_strmapi  |
+|----------------	|---------------------------------------	|
+| Prototype      	| char *ft_strmapi(char const *s, char (*f)(unsigned int, char)); |
+| Parameters     	| #1.  The string on which to iterate. <br/> #2.  The function to apply to each character. |
+| Return value   	| The string created from the successive applications of ’f’.  Returns NULL if the allocation fails. |
+| External functs | malloc |
+| Description    	| Applies the function ’f’ to each character of the string ’s’ to create a new string (with malloc(3)) resulting from successive applications of ’f’.	|
+ 
+----------
+
+| Function       	|  ft_putchar_fd  |
+|----------------	|---------------------------------------	|
+| Prototype      	| void ft_putchar_fd(char c, int fd); |
+| Parameters     	| #1.  The character to output. <br/> #2.  The file descriptor on which to write. |
+| Return value   	| None |
+| External functs | write |
+| Description    	| Outputs the character ’c’ to the given file descriptor.	|
+ 
+----------
+
+| Function       	|  ft_putstr_fd  |
+|----------------	|---------------------------------------	|
+| Prototype      	| void ft_putstr_fd(char *s, int fd); |
+| Parameters     	| #1.  The string to output. <br/> #2.  The file descriptor on which to write. |
+| Return value   	| None |
+| External functs | write |
+| Description    	| Outputs the string ’s’ to the given file descriptor.	|
+ 
+----------
+
+| Function       	|  ft_putendl_fd  |
+|----------------	|---------------------------------------	|
+| Prototype      	| void ft_putendl_fd(char *s, int fd); |
+| Parameters     	| #1.  The string to output. <br/> #2.  The file descriptor on which to write.. |
+| Return value   	| None |
+| External functs | write |
+| Description    	| Outputs the string ’s’ to the given file descriptor, followed by a newline.	|
+ 
+----------
+
+| Function       	|  ft_putnbr_fd  |
+|----------------	|---------------------------------------	|
+| Prototype      	| void ft_putnbr_fd(int n, int fd); |
+| Parameters     	| #1.  The integer to output. <br/> #2.  The file descriptor on which to write. |
+| Return value   	| None |
+| External functs | write |
+| Description    	| Outputs the integer ’n’ to the given file descriptor.	|
