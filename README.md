@@ -69,3 +69,13 @@ This first project as a 42/1337 student will help you consolidate your Piscine s
 | Return value   	| The new string.  NULL if the allocation fails. |
 | External functs | malloc |
 | Description    	| Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.	|
+
+ ----------
+
+| Function       	|  ft_strtrim  |
+|----------------	|---------------------------------------	|
+| Prototype      	| char *ft_strtrim(char const *s1, char const *set); |
+| Parameters     	| #1.  The string to be trimmed. <br/> #2.  The reference set of characters to trim. |
+| Return value   	| The trimmed string.  NULL if the allocation fails. |
+| External functs | malloc |
+| Description    	| Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.	| 
