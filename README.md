@@ -1,5 +1,5 @@
 # Libft
-My own library of useful functions in C.
+My own library of useful C Programming functions.
 
 _Description :_ 
 
