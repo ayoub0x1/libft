@@ -1,4 +1,4 @@
-# Libft
+# 42cursus - Libft
 My own library of useful C Programming functions.
 
 _Description :_ 
