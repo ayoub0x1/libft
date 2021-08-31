@@ -6,7 +6,7 @@
 /*   By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 12:59:53 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/08/31 13:41:00 by macbook          ###   ########.fr       */
+/*   Updated: 2021/08/31 15:57:36 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,14 @@ void		*ft_memcpy(void *dst, const void *src, size_t n);
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void		*ft_memmove(void *dst, const void *src, size_t len);
 void		*ft_memchr(const void *s, int c, size_t n);
+void		ft_lstadd_back(t_list **lst, t_list *newnode);
+void		ft_lstadd_front(t_list **lst, t_list *newnode);
+void		ft_lstclear(t_list **lst, void (*del)(void*));
+void		ft_lstdelone(t_list *lst, void (*del)(void*));
+void		ft_lstiter(t_list *lst, void (*f)(void *));
+t_list		*ft_lstlast(t_list *lst);
+t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list		*ft_lstnew(void *content);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strdup(const char *s1);
@@ -58,6 +66,7 @@ char		*ft_strtrim(char const *s1, char const *set);
 char		**ft_split(char const *s, char c);
 char		*ft_itoa(int n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
+int			ft_lstsize(t_list *lst);
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
 int			ft_isalnum(int c);
