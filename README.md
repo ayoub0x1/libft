@@ -9,6 +9,7 @@ This first project as a 42/1337 student will help you consolidate your Piscine s
  1. [Makefile](#makefile)
  2. [Libc Functions](#libc)
  3. [Additional functions](#additionalfunctions)
+ 4. [Bonus](#bonus)
 
 # <a name="makefile">Makefile</a>
 
@@ -154,7 +155,7 @@ This first project as a 42/1337 student will help you consolidate your Piscine s
 | Description    	| Outputs the integer ’n’ to the given file descriptor.	|
  
  
- ## Bonus
+ # <a name="bonus">Bonus<a/>
 For this part we implemented a struct defining the well-known linked lists
 ```C
 typedef	struct	s_list
