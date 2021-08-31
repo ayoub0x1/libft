@@ -6,16 +6,31 @@
 /*   By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 12:59:53 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/08/19 18:34:43 by macbook          ###   ########.fr       */
+/*   Updated: 2021/08/31 13:41:00 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdio.h>
 # include <unistd.h>
-# include <string.h>
 # include <stdlib.h>
+# include <string.h>
+# include <ctype.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
+/* Vector with x and y coordinates */
+typedef struct s_vector
+{
+	int	x;
+	int	y;
+}				t_vector;
 
 size_t		ft_strlen(const char *str);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
