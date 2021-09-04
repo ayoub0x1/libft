@@ -6,7 +6,7 @@
 /*   By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 18:11:36 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/08/19 18:16:29 by macbook          ###   ########.fr       */
+/*   Updated: 2021/09/04 14:25:55 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "libft.h"
 
-static int		ft_estim(long n)
+static int	ft_estim(long n)
 {
 	size_t	estim;
 	int		isneg;
@@ -35,7 +35,7 @@ static int		ft_estim(long n)
 	return (estim);
 }
 
-static char		*ft_gen(char *rtn, long nbr, int len, int isneg)
+static char	*ft_gen(char *rtn, long nbr, int len, int isneg)
 {
 	if (nbr != 0)
 		rtn = malloc(sizeof(char) * (len + 1));
@@ -62,7 +62,7 @@ static char		*ft_gen(char *rtn, long nbr, int len, int isneg)
 	return (rtn);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int		len;
 	char	*rtn;
