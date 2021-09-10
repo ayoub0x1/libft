@@ -6,7 +6,7 @@
 /*   By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 18:11:36 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/09/04 14:25:55 by macbook          ###   ########.fr       */
+/*   Updated: 2021/09/10 22:14:44 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,8 @@ char	*ft_itoa(int n)
 	len = ft_estim(nbr);
 	rtn = 0;
 	isneg = 0;
-	if (!(rtn = ft_gen(rtn, nbr, len, isneg)))
+	rtn = ft_gen(rtn, nbr, len, isneg);
+	if (!(rtn))
 		return (0);
 	return (rtn);
 }
