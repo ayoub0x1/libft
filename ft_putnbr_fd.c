@@ -6,7 +6,7 @@
 /*   By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 14:35:45 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/08/09 15:02:00 by root             ###   ########.fr       */
+/*   Updated: 2021/09/25 13:14:20 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int	i;
+	unsigned int	a;
 
-	i = n;
+	a = n;
 	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
-		i = -n;
+		a = -n;
 	}
-	if (n > 9)
+	if (a > 9)
 	{
-		ft_putnbr_fd((i / 10), fd);
-		ft_putchar_fd((i % 10) + '0', fd);
+		ft_putnbr_fd((a / 10), fd);
+		ft_putchar_fd((a % 10) + '0', fd);
 	}
 	else
-		ft_putchar_fd(i + '0', fd);
+		ft_putchar_fd(a + '0', fd);
 }

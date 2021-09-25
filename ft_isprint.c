@@ -6,13 +6,13 @@
 /*   By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 15:23:34 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/08/10 15:24:49 by root             ###   ########.fr       */
+/*   Updated: 2021/09/25 13:01:40 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_isprint(int c)
 {
 	if (c >= ' ' && c <= '~')
 		return (1);

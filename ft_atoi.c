@@ -6,7 +6,7 @@
 /*   By: aymoulou <marvin@s42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 13:51:37 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/08/11 19:14:49 by macbook          ###   ########.fr       */
+/*   Updated: 2021/09/25 13:09:51 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,29 @@
 
 long long	ft_atoi(const char *str)
 {
-	int	i;
-	int	num;
-	int	neg;
+	int					i;
+	int					r;
+	long long			result;
 
 	i = 0;
-	num = 0;
-	neg = 1;
-	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v'
-		|| str[i] == '\f' || str[i] == 'r')
+	r = 1;
+	result = 0;
+	while ((str[i] == '\n' || str[i] == '\r' || str[i] == ' ' || str[i] == '\t'
+			|| str[i] == '\v' || str[i] == '\f') && str[i])
 		i++;
+	if (str[i] == '-')
+		r = -1;
 	if (str[i] == '-' || str[i] == '+')
-	{	
-		if (str[i] == '-')
-			neg *= -1;
 		i++;
-	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		num = num * 10 + (str[i] - 0);
+		if (result < 0 && r == -1)
+			return (0);
+		if (result < 0 && r == 1)
+			return (-1);
+		result *= 10;
+		result += str[i] - '0';
 		i++;
 	}
-	return (num * neg);
+	return (r * result);
 }
