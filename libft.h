@@ -6,7 +6,7 @@
 /*   By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 12:59:53 by aymoulou          #+#    #+#             */
-/*   Updated: 2021/08/31 15:57:36 by macbook          ###   ########.fr       */
+/*   Updated: 2021/11/01 09:57:33 by aymoulou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size);
 long long	ft_atoi(const char *str);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char *s, int fd);
-void		ft_putnbr_fd(int n, int	fd);
+void		ft_putnbr_fd(int n, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
