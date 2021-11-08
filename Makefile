@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aymoulou <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: aymoulou <aymoulou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/09 14:41:11 by aymoulou          #+#    #+#              #
-#    Updated: 2021/11/05 15:16:17 by aymoulou         ###   ########.fr        #
+#    Updated: 2021/11/08 17:48:08 by aymoulou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ $(NAME): ${OBJS}
 		@ar rcs ${NAME} ${OBJS}
 
 %.o:%.c
-		@echo "hani kan commpili $(GREEN)" $< "$(RESET)akhay sat"
+		@echo "hani kan commpili$(GREEN)" $< "$(RESET)akhay sat"
 		@${CC} ${CFLAGS} -c $< -o $@
 
 bonus:	${OBJS} ${OBJSBONUS}
